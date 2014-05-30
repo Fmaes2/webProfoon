@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Profoon.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    PROFOON
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:ImageButton ID="ImageButton1" runat="server" BorderColor="White" 
+                    BorderStyle="Solid" BorderWidth="1px" Height="25px" 
+                    ImageUrl="/Imagenes/login.png" onclick="ImageButton1_Click" Width="26px" />
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Registrarse.aspx" ID="HeadLoginStatus" runat="server">Iniciar sesión</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Pantalla de bienvenida <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesión" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                
+                <asp:Menu ID="Menu1" runat="server" CssClass="menu" EnableTheming="True" 
+                    Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio" Value="Inicio">
+                        </asp:MenuItem>
+                        <asp:MenuItem Selectable="False" Text="Smartphones" Value="Smartphones">
+                            <asp:MenuItem Text="Android" Value="Android"></asp:MenuItem>
+                            <asp:MenuItem Text="Apple" Value="Apple"></asp:MenuItem>
+                            <asp:MenuItem Text="Windows Phone" Value="Windows Phone"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Selectable="False" Text="Tablets" Value="Tablets">
+                            <asp:MenuItem Text="Android" Value="Android"></asp:MenuItem>
+                            <asp:MenuItem Text="Apple" Value="Apple"></asp:MenuItem>
+                            <asp:MenuItem Text="Windows" Value="Windows"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Selectable="False" Text="Accesorios" Value="Accesorios">
+                            <asp:MenuItem Text="Auriculares" Value="Auriculares"></asp:MenuItem>
+                            <asp:MenuItem Text="Baterias y Cargadores" Value="Baterias"></asp:MenuItem>
+                            <asp:MenuItem Text="Fundas y Carcasas" Value="Fundas y Carcasas"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

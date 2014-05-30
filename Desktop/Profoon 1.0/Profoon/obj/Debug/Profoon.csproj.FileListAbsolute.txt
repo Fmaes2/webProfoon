@@ -1,0 +1,7 @@
+C:\Users\Francisco\Desktop\Profoon\Profoon\bin\Profoon.dll
+C:\Users\Francisco\Desktop\Profoon\Profoon\bin\Profoon.pdb
+C:\Users\Francisco\Desktop\Profoon\Profoon\obj\Debug\Profoon.dll
+C:\Users\Francisco\Desktop\Profoon\Profoon\obj\Debug\Profoon.pdb
+C:\Users\Francisco\Desktop\Profoon\Profoon\bin\Libreria.dll
+C:\Users\Francisco\Desktop\Profoon\Profoon\bin\Libreria.pdb
+C:\Users\Francisco\Desktop\Profoon\Profoon\obj\Debug\Profoon.csprojResolveAssemblyReference.cache
