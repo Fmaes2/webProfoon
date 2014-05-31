@@ -1,4 +1,0 @@
-C:\Users\Francisco\Desktop\Profoon\Libreria\bin\Debug\Libreria.dll
-C:\Users\Francisco\Desktop\Profoon\Libreria\bin\Debug\Libreria.pdb
-C:\Users\Francisco\Desktop\Profoon\Libreria\obj\Debug\Libreria.dll
-C:\Users\Francisco\Desktop\Profoon\Libreria\obj\Debug\Libreria.pdb
